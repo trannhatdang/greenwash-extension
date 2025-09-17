@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "version": "0.1",
+  "name": "dectection_extension",
+  "description": "detects something",
+  "content_scripts": [
+    {
+      "js": ["src/content.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "test.png"
+  }
+}
