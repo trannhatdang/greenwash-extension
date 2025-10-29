@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./output.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+	<nav class="relative bg-gray-800">
+	  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+	    <div class="relative flex h-16 items-center justify-between">
+	      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+		<div class="hidden sm:ml-6 sm:block">
+		  <div class="flex space-x-4">
+		    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+		    <a href="#" aria-current="page" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Dashboard</a>
+		    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+		    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+		    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+	    <div class="space-y-1 px-2 pt-2 pb-3">
+	      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+	      <a href="#" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
+	      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+	      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+	      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+	    </div>
+	  </el-disclosure>
+	</nav>
+
+
+	<p class="object-center text-x1 font-medium text-black dark:text-white mx-auto max-w-sm flex"> Type to analyze... <p>
+
+	<script src = "./popup.js"> </script>
+	<textarea rows="10" cols="30" id="greenwash-text" class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"></textarea><br>
+	<button id="analyzeButton" class="text-x1 text-black font-medium rounded-md px-1 py-1 flex mx-auto max-w-sm bg-sky-500 hover:bg-sky-700" >Analyze</button>
+
+	<p id="results"> </p>
+	</body>
+</html>
+

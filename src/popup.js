@@ -3,9 +3,8 @@ const deleteApi = "http://ec2-3-106-249-206.ap-southeast-2.compute.amazonaws.com
 window.onload = function() 
 {
 	const button = document.getElementById("analyzeButton");
-	console.log(button);
 	button.addEventListener("click", analyzeText);
-};
+}
 
 async function analyzeText()
 {

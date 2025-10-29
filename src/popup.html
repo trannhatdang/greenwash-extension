@@ -1,19 +1,18 @@
 <html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./output.css" rel="stylesheet">
+	</head>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-  </head>
+	<body>
+		<p class="object-center text-3xl font-medium text-black dark:text-white mx-auto max-w-sm flex mb-10"> Type to analyze... </p>
 
-  <body>
-    <p class="object-center text-x1 font-medium text-black dark:text-white mx-auto max-w-sm flex"> Type to analyze... <p>
+		<script src = "./popup.js"> </script>
+		<textarea rows="10" cols="30" id="greenwash-text" class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"></textarea><br>
+		<button id="analyzeButton" class="text-x1 text-black font-medium rounded-md px-1 py-1 flex mx-auto max-w-sm bg-sky-500 hover:bg-sky-700" >Analyze</button>
 
-    <script src = "./popup.js"> </script>
-    <textarea rows="10" cols="30" id="greenwash-text" class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"></textarea><br>
-    <button id="analyzeButton" class="text-x1 text-black font-medium rounded-md px-1 py-1 flex mx-auto max-w-sm bg-sky-500 hover:bg-sky-700" >Analyze</button>
-
-    <p id="results"> </p>
-  </body>
+		<p id="results"> </p>
+	</body>
 </html>
 

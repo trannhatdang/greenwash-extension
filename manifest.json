@@ -17,5 +17,9 @@
   "action": {
     "default_popup": "src/popup.html",
     "default_icon": "test.png"
+  },
+  "background": {
+	  "service_worker" : "src/service_worker.js",
+	  "type": "module"
   }
 }
